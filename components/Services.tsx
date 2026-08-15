@@ -1,48 +1,48 @@
 import {
   Stethoscope,
   Syringe,
-  Bone,
-  Ambulance,
-  Smile,
-  Scissors,
+  ShoppingBag,
+  HeartPulse,
+  PackageCheck,
+  Truck,
 } from "lucide-react";
 
 const services = [
   {
     icon: Stethoscope,
-    title: "General Checkups",
+    title: "Veterinary Care",
     description:
-      "Routine health examinations to keep your pets healthy throughout every stage of life.",
+      "Professional veterinary support for your pet's healthcare and routine needs.",
   },
   {
     icon: Syringe,
-    title: "Vaccinations",
+    title: "Pet Vaccinations",
     description:
-      "Protect your pets from preventable diseases with complete vaccination programs.",
+      "Keep your pets protected with essential vaccinations and preventive care.",
   },
   {
-    icon: Bone,
-    title: "Surgery",
+    icon: ShoppingBag,
+    title: "Pet Supplies",
     description:
-      "Safe surgical procedures performed with modern equipment and experienced veterinarians.",
+      "Find everyday pet essentials and supplies for your companion in one place.",
   },
   {
-    icon: Ambulance,
-    title: "Emergency Care",
+    icon: HeartPulse,
+    title: "Pet Health",
     description:
-      "Immediate medical attention whenever your pet needs urgent treatment.",
+      "Care and support focused on keeping your pets healthy and comfortable.",
   },
   {
-    icon: Smile,
-    title: "Dental Care",
+    icon: PackageCheck,
+    title: "In-Store Shopping",
     description:
-      "Professional dental cleaning and treatment for healthy teeth and gums.",
+      "Browse and purchase pet products conveniently at our store.",
   },
   {
-    icon: Scissors,
-    title: "Pet Grooming",
+    icon: Truck,
+    title: "Home Delivery",
     description:
-      "Premium grooming services to keep your pets clean, comfortable, and happy.",
+      "Get your pet essentials delivered conveniently to your doorstep.",
   },
 ];
 
@@ -54,6 +54,8 @@ export default function Services() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
+        {/* Heading */}
+
         <div className="text-center max-w-3xl mx-auto">
 
           <p className="uppercase tracking-[0.3em] text-emerald-700 font-semibold">
@@ -61,15 +63,17 @@ export default function Services() {
           </p>
 
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4">
-            Complete Care For Every Stage Of Your Pet's Life
+            Everything Your Pet Needs
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            From preventive care to emergency treatment, our experienced team
-            provides everything your pet needs to stay healthy and happy.
+            From veterinary care to everyday pet essentials, Surya Pet & Vet
+            Clinic makes taking care of your companion simple and convenient.
           </p>
 
         </div>
+
+        {/* Services */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 

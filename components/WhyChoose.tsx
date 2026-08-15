@@ -7,21 +7,21 @@ import {
 const features = [
   {
     icon: ShieldCheck,
-    title: "Experienced Veterinarians",
+    title: "Trusted By Pet Parents",
     description:
-      "Our highly qualified veterinary team provides compassionate care backed by years of clinical expertise.",
+      "With a 4.9-star Google rating and 85+ reviews, Surya Pet & Vet Clinic is trusted by pet parents in the local community.",
   },
   {
     icon: Stethoscope,
-    title: "Advanced Medical Equipment",
+    title: "Veterinary Care",
     description:
-      "Modern diagnostic technology helps us deliver accurate treatment and faster recovery for every pet.",
+      "Get convenient access to veterinary care for your pet alongside the everyday products and supplies they need.",
   },
   {
     icon: HeartHandshake,
-    title: "Compassionate Care",
+    title: "Everything In One Place",
     description:
-      "Every pet is treated like family with patience, empathy, and personalized attention from our team.",
+      "From pet supplies and in-store shopping to convenient delivery, we make caring for your companion easier.",
   },
 ];
 
@@ -33,16 +33,16 @@ export default function WhyChoose() {
         <div className="max-w-3xl mx-auto text-center">
 
           <p className="uppercase tracking-[0.3em] text-emerald-700 font-semibold">
-            Why Choose GreenPaws
+            Why Surya
           </p>
 
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4">
-            Trusted Care. Modern Medicine. Happy Pets.
+            Trusted Pet Care, Close To Home
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We combine advanced veterinary medicine with genuine compassion to
-            provide the highest standard of care for every pet.
+            Surya Pet & Vet Clinic brings veterinary care and everyday pet
+            essentials together, making pet care simple and convenient.
           </p>
 
         </div>
@@ -59,9 +59,7 @@ export default function WhyChoose() {
               >
 
                 <div className="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center">
-
                   <Icon className="w-8 h-8 text-emerald-700" />
-
                 </div>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mt-8">

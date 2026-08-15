@@ -1,87 +1,94 @@
-const doctors = [
+import {
+  Heart,
+  Stethoscope,
+  PawPrint,
+} from "lucide-react";
+
+const highlights = [
   {
-    name: "Dr. Sarah Johnson",
-    role: "Chief Veterinarian",
-    qualification: "BVSc, MVSc",
-    experience: "12+ Years Experience",
-    image:
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
+    icon: Stethoscope,
+    title: "Veterinary Support",
+    description:
+      "Convenient access to veterinary care for your pet's healthcare needs.",
   },
   {
-    name: "Dr. Michael Brown",
-    role: "Veterinary Surgeon",
-    qualification: "BVSc, DACVS",
-    experience: "10+ Years Experience",
-    image:
-      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80",
+    icon: PawPrint,
+    title: "For Every Pet",
+    description:
+      "A welcoming place for pet parents looking after their companions.",
   },
   {
-    name: "Dr. Emily Wilson",
-    role: "Small Animal Specialist",
-    qualification: "BVSc, MVSc",
-    experience: "8+ Years Experience",
-    image:
-      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=800&q=80",
+    icon: Heart,
+    title: "Pet First",
+    description:
+      "A convenient combination of pet care and everyday pet essentials.",
   },
 ];
 
 export default function Doctors() {
   return (
-    <section id="doctors" className="py-24 bg-slate-50">
+    <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          <p className="uppercase tracking-[0.3em] text-emerald-700 font-semibold">
-            Meet Our Team
-          </p>
+          {/* Left */}
+          <div>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4">
-            Experienced Veterinarians You Can Trust
-          </h2>
+            <p className="uppercase tracking-[0.3em] text-emerald-700 font-semibold">
+              Your Pet Deserves The Best
+            </p>
 
-          <p className="mt-6 text-lg text-gray-600 leading-8">
-            Our dedicated veterinary professionals combine years of experience
-            with genuine compassion to deliver exceptional care for every pet.
-          </p>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4 leading-tight">
+              Everything Your Pet Needs,
+              <br />
+              All In One Place.
+            </h2>
 
-        </div>
+            <p className="mt-6 text-lg text-gray-600 leading-8">
+              From veterinary care to essential pet supplies, Surya Pet & Vet
+              Clinic is here to make everyday pet care more convenient for you
+              and your companion.
+            </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-
-          {doctors.map((doctor) => (
-            <div
-              key={doctor.name}
-              className="bg-white rounded-3xl overflow-hidden shadow-md border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+            <a
+              href="#appointment"
+              className="inline-flex mt-8 bg-emerald-700 hover:bg-emerald-800 transition text-white px-7 py-3.5 rounded-full font-semibold"
             >
-              <img
-                src={doctor.image}
-                alt={doctor.name}
-                className="w-full h-80 object-cover"
-              />
+              Get In Touch
+            </a>
 
-              <div className="p-8">
+          </div>
 
-                <h3 className="text-2xl font-semibold text-gray-900">
-                  {doctor.name}
-                </h3>
+          {/* Right */}
+          <div className="grid sm:grid-cols-3 lg:grid-cols-1 gap-5">
 
-                <p className="mt-2 text-emerald-700 font-medium">
-                  {doctor.role}
-                </p>
+            {highlights.map((item) => {
+              const Icon = item.icon;
 
-                <p className="mt-3 text-gray-500">
-                  {doctor.qualification}
-                </p>
+              return (
+                <div
+                  key={item.title}
+                  className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition"
+                >
 
-                <p className="mt-2 text-sm text-gray-400">
-                  {doctor.experience}
-                </p>
+                  <div className="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-emerald-700" />
+                  </div>
 
-              </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mt-5">
+                    {item.title}
+                  </h3>
 
-            </div>
-          ))}
+                  <p className="text-gray-600 mt-2 leading-7">
+                    {item.description}
+                  </p>
+
+                </div>
+              );
+            })}
+
+          </div>
 
         </div>
 

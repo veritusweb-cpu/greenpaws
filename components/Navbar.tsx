@@ -12,34 +12,45 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#"
-          className="text-3xl font-bold tracking-tight text-emerald-700"
+          className="text-2xl md:text-3xl font-bold tracking-tight text-emerald-700"
         >
-          GreenPaws
+          Surya Pet & Vet
         </a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-10 text-gray-700">
 
-          <a href="#services" className="hover:text-emerald-700 transition">
+          <a
+            href="#services"
+            className="hover:text-emerald-700 transition"
+          >
             Services
           </a>
 
-          <a href="#doctors" className="hover:text-emerald-700 transition">
-            Doctors
+          <a
+            href="#doctors"
+            className="hover:text-emerald-700 transition"
+          >
+            Veterinary Care
           </a>
 
-          <a href="#reviews" className="hover:text-emerald-700 transition">
+          <a
+            href="#reviews"
+            className="hover:text-emerald-700 transition"
+          >
             Reviews
           </a>
 
-          <a href="#contact" className="hover:text-emerald-700 transition">
+          <a
+            href="#contact"
+            className="hover:text-emerald-700 transition"
+          >
             Contact
           </a>
 
         </div>
 
         {/* Desktop Button */}
-
         <a
           href="#appointment"
           className="hidden md:inline-flex bg-emerald-700 hover:bg-emerald-800 transition text-white px-6 py-3 rounded-full font-semibold"
@@ -48,24 +59,24 @@ export default function Navbar() {
         </a>
 
         {/* Mobile */}
-
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-3xl"
+          className="md:hidden text-3xl text-gray-800"
+          aria-label="Open menu"
         >
           ☰
         </button>
 
       </div>
 
+      {/* Mobile Menu */}
       {open && (
-
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-white border-t border-gray-200">
 
           <a
             href="#services"
             onClick={() => setOpen(false)}
-            className="block px-6 py-5"
+            className="block px-6 py-5 hover:text-emerald-700"
           >
             Services
           </a>
@@ -73,15 +84,15 @@ export default function Navbar() {
           <a
             href="#doctors"
             onClick={() => setOpen(false)}
-            className="block px-6 py-5"
+            className="block px-6 py-5 hover:text-emerald-700"
           >
-            Doctors
+            Veterinary Care
           </a>
 
           <a
             href="#reviews"
             onClick={() => setOpen(false)}
-            className="block px-6 py-5"
+            className="block px-6 py-5 hover:text-emerald-700"
           >
             Reviews
           </a>
@@ -89,7 +100,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="block px-6 py-5"
+            className="block px-6 py-5 hover:text-emerald-700"
           >
             Contact
           </a>
@@ -97,15 +108,13 @@ export default function Navbar() {
           <a
             href="#appointment"
             onClick={() => setOpen(false)}
-            className="block m-5 bg-emerald-700 text-white text-center py-3 rounded-full font-semibold"
+            className="block m-5 bg-emerald-700 hover:bg-emerald-800 text-white text-center py-3 rounded-full font-semibold"
           >
             Book Appointment
           </a>
 
         </div>
-
       )}
-
     </nav>
   );
 }

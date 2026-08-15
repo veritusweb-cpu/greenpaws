@@ -6,20 +6,21 @@ export default function Footer() {
 
         <div className="grid md:grid-cols-2 gap-12">
 
+          {/* Brand */}
           <div>
 
             <h2 className="text-4xl font-bold text-emerald-400">
-              GreenPaws
+              Surya Pet & Vet Clinic
             </h2>
 
             <p className="text-gray-400 mt-5 leading-8 max-w-md">
-              Compassionate veterinary care with modern medicine,
-              trusted by pet owners who want the very best for
-              their companions.
+              Veterinary care and pet supplies in Shaheen Bagh, Jasola,
+              making it easier for pet parents to care for their companions.
             </p>
 
           </div>
 
+          {/* Quick Links */}
           <div>
 
             <h3 className="text-xl font-semibold mb-6">
@@ -28,19 +29,31 @@ export default function Footer() {
 
             <div className="grid grid-cols-2 gap-4 text-gray-400">
 
-              <a href="#services" className="hover:text-white transition">
+              <a
+                href="#services"
+                className="hover:text-white transition"
+              >
                 Services
               </a>
 
-              <a href="#doctors" className="hover:text-white transition">
-                Doctors
+              <a
+                href="#reviews"
+                className="hover:text-white transition"
+              >
+                Reviews
               </a>
 
-              <a href="#reviews" className="hover:text-white transition">
-                Testimonials
+              <a
+                href="#appointment"
+                className="hover:text-white transition"
+              >
+                Get In Touch
               </a>
 
-              <a href="#contact" className="hover:text-white transition">
+              <a
+                href="#contact"
+                className="hover:text-white transition"
+              >
                 Contact
               </a>
 
@@ -50,9 +63,16 @@ export default function Footer() {
 
         </div>
 
-        <div className="border-t border-white/10 mt-16 pt-8 text-center text-gray-500">
+        {/* Bottom */}
+        <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between gap-4 text-gray-500 text-sm">
 
-          © 2026 GreenPaws Veterinary Clinic. All rights reserved.
+          <p>
+            © 2026 Surya Pet & Vet Clinic. All rights reserved.
+          </p>
+
+          <p>
+            Shaheen Bagh, New Delhi
+          </p>
 
         </div>
 
